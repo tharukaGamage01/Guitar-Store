@@ -1,0 +1,539 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');      
+
+*{
+	padding:0;
+	margin:0;
+	text-decoration:none;
+	list-style:none;
+	box-sizing:border-box;
+	
+}
+
+.selected{
+	background-color: #ffffff;
+	color: black;
+}
+.navBar{
+	font-family: 'Black Ops One', cursive;
+}
+
+
+nav{
+	display: flex;
+	background-color: rgba(0,0,0,0.5);
+	height:95px auto;
+	width:100%;
+	overflow: hidden;
+
+	
+}
+.logo{
+	line-height:80px;
+	padding:0 auto;
+	width:100px;
+ 	padding: 10px;
+	margin-left: 20px;
+	padding-bottom: 5px;
+}
+
+
+nav ul{
+	position: relative;
+    margin-top: 7px;
+	margin-right:10px;
+	margin-left: auto;
+	float: right;
+}
+
+nav ul li{
+	display:inline-block;
+	line-height:80px;
+	margin:0 5px;
+}
+
+nav ul li a{
+    font-family: 'SF Pro Display', sans-serif;
+	color:white;
+	font-size:16px;
+	padding:10px 20px;
+	border-radius:40px;
+	font-weight:520;
+	text-transform:uppercase;
+	transition: 1s;
+}
+
+nav ul li a:hover{
+	background:#ffffff;
+	color: black;
+}
+
+
+
+html, body {
+    font-family: 'SF Pro Display', sans-serif;
+
+       
+    background-image: url("../store/store_assets/background\ image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+                                                    
+}
+
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0%;
+}
+.section-header {
+    
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    text-shadow: black 0px 0px 4px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.67em 0.67em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    
+    color: white;
+    background-color: #031c66;
+    border: none;
+    border-radius: 0.3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+
+
+.shop-item{
+
+     width: 45%;
+     margin: 1%;
+     padding:2%;
+     float: left;
+     background-color: white;
+     border-radius: 15px;
+     opacity: 85%;
+ 
+   
+   
+}
+.product-desc {
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.shop-item-title {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+      
+}
+
+.product-detail {
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+
+.shop-item-image {
+   width: 20%;
+   float: left;
+    
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+   
+    
+}
+
+.shop-item-price {
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+
+.shop-items {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+  
+}
+
+
+
+/* ------------------------------checkout details -------------------------------------- */
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: white;
+    text-shadow: black 0px 0px 4px;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: black 0px 0px 4px;
+}
+
+.cart-quantity {
+    width: 30%;
+}
+
+.cart-item-title {
+    color: white;
+    text-shadow: black 0px 0px 4px;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid rgb(255, 0, 0);
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: black 0px 0px 4px;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: white;
+    text-shadow: black 0px 0px 4px;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.25em;
+}
+
+
+/*------------------------- Popup box for user data input CSS Section-------------------------*/
+
+
+.popupContainer
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,300%);
+    text-align: center;
+    z-index: 1000;
+}
+
+.popupContainer h1
+{
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.popup
+{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+}
+
+.popup-content
+{
+    height: 700px;
+    width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+input
+{
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    padding: 8px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.close
+{
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    background: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 28px -4px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.model
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0 rgba(237, 178, 255, 0.212);
+    /* background: linear-gradient(135deg, #ff72a131,rgba(75, 168, 255, 0.158)); */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 500px;
+    max-width: 80%;
+    z-index: 21;
+    background: rgb(18,70,103);
+    /* background: linear-gradient(0deg, rgba(18,70,103,1) 0%, rgba(75,14,89,1) 46%, rgba(25,19,22,1) 100%); */
+   
+}
+
+.model.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.model-header
+{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: #fff;
+}
+
+.model-header .title
+{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.model-header .close-button
+{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.model-body
+{
+    padding: 10px 25px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+#overlay
+{
+    position: fixed;
+    opacity:0 ;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.192);
+    backdrop-filter: blur(80px);
+    pointer-events: none;
+    z-index: 20;
+}
+
+#overlay.active
+{
+    opacity: 1;
+    pointer-events:all ;
+}
+
+
+#user-details-form {
+    width:400px;
+    padding:20px;
+    text-transform: uppercase;
+    background-color: #fff;
+}
+
+.title {
+    margin-bottom: 0;
+
+}
+
+.input-group {
+    margin:-10px 0; 
+    position:relative;
+}
+
+.input-group label {
+    display:inline-block;
+    margin-top: 10px;
+}
+
+.input-group input {
+    display:block;
+    width:100%;
+    border-radius: 10px;
+    margin-top: 9px;
+    margin-bottom:25px;
+}
+
+.error input {
+    border:3px red solid;
+    margin-top: 5px;
+    margin-bottom:25px;
+   
+}
+
+.success input {
+    border:3px green solid;
+    margin-top: 5px;
+    margin-bottom:25px;
+ 
+}
+
+.input-group i {
+     position:absolute;
+     right:10px;
+     top:52px;
+     visibility: hidden;
+}
+
+
+.success i.fa-check-circle{
+     visibility: visible;
+     color:green;
+
+}
+
+.error i.fa-exclamation-circle {
+    visibility: visible;
+    color:red;
+}
+
+
+.input-group p {
+    font-size: 15px;
+    color:red;
+    visibility: hidden;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.error p 
+{
+    visibility: visible;
+}
+
+#btnPopup{
+    text-transform: uppercase;
+    border-radius: 20px;
+    width: 100px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight:500 ;
+    transition: 0.4s;
+    border: none;
+    cursor: pointer;
+    
+}
+
+#btnPopup:hover{
+    background-color: #009688;
+    color: #fff;
+}
+

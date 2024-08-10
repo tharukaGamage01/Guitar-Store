@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rate Us - La Guitar</title>
+    <link rel="stylesheet" href="Form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <Script src="Form.js"></Script>
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+
+<!-- Linking the navigation bar stylesheet -->
+<link rel="stylesheet" type="text/css" href="../HomePage/header.css">
+
+<!--Linking with footer stylesheet-->
+<link rel="stylesheet"  href="../HomePage/footer.css">
+
+ <!-- fowntawesome icon -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+ integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+ crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <!-- linking ReturnUp btn -->
+ <link rel="stylesheet" href="../HomePage/ReturnUpBtn.css">
+
+
+</head>
+<body>
+
+    <a id="button">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    <video autoplay loop class="video-background" muted plays-inline>
+        <source src="../HomePage/home_assets/guitartypeVideo.mp4" type="video/mp4">
+    </video>
+
+    <nav id="top">
+        <a href="../HomePage/home.html">
+            <img class= "logo"  src="../HomePage/home_assets/Logo.png" alt="la guitare">
+        </a>
+
+        <!--menu items-->          
+        <ul>
+            <li><a href="../HomePage/home.html">HOME</a></li>
+            <li><a href="../Shop/store/store.html">SHOP</a></li>
+            <li><a href="../QueryForm/Form.html" class="selected">COMMENTS</a></li>
+            <li><a href="../Quiz/index.html">QUIZ</a></li>
+            <li><a href="../Gallery/Gallery.html">GALLERY</a></li>
+            <li><a href="../Sitemap/Sitemap.html">SITE MAP</a></li>
+            <li><a href="../AboutUs/Aboutus.html">ABOUT US</a></li>
+        </ul>
+    </nav>
+ 
+        
+        <div class="container">
+            <h1>Comment Us</h1>
+            <p class="description">If you enjoyed your experience, we would greatly appreciate it if you could take a moment to rate us. Your feedback helps us improve and provide better service to our valued customers.</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Rate Us</h3>
+
+                    <form action="https://formspree.io/f/myyapjpg"; method="post" >
+                       
+    
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="name" class="required">Name</label>
+                                <input type="text" class="namePrompt" placeholder="John Amendo" id="name" name="Name" required oninvalid="this.setCustomValidity('Name Required')" oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="input-group">
+                                <label for="email" class="required">Email</label>
+                                <input type="email" class="emailPropmt" placeholder="john11@gmail.com" id="email" name="Email" required oninvalid="this.setCustomValidity('Email Required')" oninput="this.setCustomValidity('')">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                
+                                <label>Rate our Service</label>
+                                <button class="star" type="button" value="1">&#9734</button>
+                                <button class="star" type="button" value="2">&#9734</button>
+                                <button class="star" type="button" value="3">&#9734</button>
+                                <button class="star" type="button" value="4">&#9734</button>
+                                <button class="star" type="button" value="5">&#9734</button>    
+                            <label for="" class="star_number"></label>
+                            <input type="hidden" id="rate" name="star">
+                            </div>
+                            <script src="functionForm.js"></script>
+                        </div>
+                        
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label class="required">Please could you tell us your reason for giving this rating ?</label>
+                                <textarea class="textPrompt" id="message" name="message" placeholder="Your Message"  required oninvalid="this.setCustomValidity('Test Required')" oninput="this.setCustomValidity('')"></textarea>
+                            <div class="input-group">
+                                <label for="Question01">What is your Favorite Guitar Category</label>
+                                <select id="Question01" name="select">
+                                    <option value="Question01">--Please Select an Select--</option>
+                                    <option value="Acoustic">Acoustic</option>
+                                    <option value="Bass">Bass</option>
+                                    <option value="Classical">Classical</option>
+                                    <option value="Electric">Electric</option>
+                                </select>
+                            </div>
+                        </div>
+                    <input class="subBtn" type="submit" id="submit-btn" value="SUBMIT" onmouseover="mouseOver()">
+                    </form>
+                </div>
+        </div>
+    
+        <div class="contact-right">
+            <h3>Reach Us</h3>
+    
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td>charaka00kusumananda@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>+94 768 654 402</td>
+                </tr>
+                <tr>
+                    <td>Address </td>
+                    <td>
+                        La Guitare <br />
+                        No 197/8, <br />
+                        Galle Road,<br />
+                        Colombo.
+                    </td>
+                </tr>
+            </table>
+        </div>
+</div>
+    </div>
+
+
+    <!-- ------------------------------------------------website footer----------------------------------------------- -->
+    <div class="footer">
+        <div class="footer-content">
+          <div class="footer-img">
+            <!-- website logo in footer -->
+            <a href="../HomePage/home.html">
+            <img src="../HomePage/home_assets/Logo.png" alt="footer logo" width="55%" role="img" aria-label="link to home page"/></a>
+          </div>
+          <div class="footer-about">
+            <!-- footer about area -->
+            <h2>About Us</h2>
+            <p class="justify-text">
+                Our guitar shop is dedicated to providing excellent customer service and helping musicians of all
+                skill levels find their perfect instrument.
+                We have a wide variety of guitars in stock, including acoustic, electric, and bass guitars from all
+                the major brands.
+                <br>
+                We also offer financing options and layaway plans to help you make your dream guitar a reality.
+                We look forward to helping you find the perfect guitar and supporting you on your musical journey.
+            </p>
+          </div>
+          <div class="footer-contact">
+            <!-- footer contact info -->
+            <h2><strong>Contact Info</strong></h2>
+            <p>
+              +94 112839626 <br /><br />
+              La Guitare <br />
+              No 197/8, <br />
+              Galle Road,<br />
+              Colombo.
+            </p>
+          </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="footer-content">
+        </div>
+        <hr class="footer-hr">
+        <!-- page credits-link to page editor page and additional content -->
+        <div class="additional">
+        <p class="page-credits"><b>Created by :</b> <a href="../PageEditor/PageEditor_Charaka.html">Charaka Kalana</a></p>
+        </div>
+    </div>
+
+
+        <!-- ---------------------- ReturnUp Btn ------------------------------ -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+
+        <script type="text/javascript">
+
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 200) {
+            btn.addClass('show');
+            } else {
+            btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '200');
+        });
+
+        </script>
+
+
+</body>
+</html>

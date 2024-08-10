@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guitar Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+     <!-- Linking the navigation bar stylesheet -->
+     <link rel="stylesheet" type="text/css" href="../HomePage/header.css" />
+
+     <!--Linking with footer stylesheet-->
+     <link rel="stylesheet" href="QuizFooter.css" />
+  </head>
+
+  <body>
+    
+    <nav>
+      <a href="../HomePage/home.html">
+      <img class= "logo" src="../HomePage/home_assets/Logo.png" alt="LaGuitar">
+      </a>
+          <!--menu items-->          
+          <ul>
+              <li><a href="../HomePage/home.html">HOME</a></li>
+              <li><a href="../Shop/store/store.html">SHOP</a></li>
+              <li><a href="../QueryForm/Form.html" >COMMENTS</a></li>
+              <li><a href="index.html" class="selected" >QUIZ</a></li>
+              <li><a href="../Gallery/Gallery.html">GALLERY</a></li>
+              <li><a href="../Sitemap/Sitemap.html">SITE MAP</a></li>
+              <li><a href="../AboutUs/Aboutus.html" >ABOUT US</a></li>
+          </ul>
+    </nav>
+
+    <!-- <div class=" "btn_start">
+    <a href="../quiz/Quiz Tryout/index.html" id="btn">Start Quiz</a>
+    </div> -->
+
+    <video autoplay loop muted id="video-background">
+      <source src="../HomePage/home_assets/guitartypeVideo.mp4" type="video/mp4">
+    </video>
+    <div class="info-container" id="info-container">
+      <div class="topic-box">
+        <h2 class="infoTitle">Check Your Knowledge About The World Of Guitars</h2>
+      </div>
+      <div class="content-box">
+        <ul>
+          <li>You cant exit quiz once you start.</li>
+          <li>You have 10 questions and have 6s to answer the each question.</li>
+          <li>If you don't answer within time, next question will automatically Appear and you can't go back.</li>
+          <li>You'll get points on the basis of your correct answers.</li>
+        </ul>
+        <button id="btnStartQuiz">Start Quiz</button>
+      </div>
+    </div>
+     
+    <div class="quiz-container" id="quiz-container">
+      <div class="header">
+        <h1>Check Your Knowledge About The World Of Guitars</h1>
+      </div>     
+      <div class="quiz" id="quiz-div" >
+      <!-- <div class="quiz" id="quiz-div" > -->
+        <div class="qNum">
+          <h3 id="question-num"></h3>
+        </div>
+        <div class="timer">
+          <h3 id="timer">Time left: 6s</h3>
+        </div>
+        <div class="question">
+          <h2 id="result1"></h2>
+          <h2 id="question"></h2>
+          <h2 id="result2"></h2>
+          <h2 id="result3"></h2>
+          <div id="choices"></div>
+        </div>
+        <button id="next">Next</button>
+        <!-- <button id="restart"><span>Restart</span></button> -->
+        <button id="quit">Exit Quiz</button>
+      </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+    <!-- ------------------------------------------------website footer----------------------------------------------- -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-img">
+          <!-- website logo in footer -->
+          <a href="../HomePage/home.html">
+            <img
+              src="../HomePage/home_assets/Logo.png"
+              alt="footer logo"
+              width="55%"
+              role="img"
+              aria-label="link to home page"
+          /></a>
+        </div>
+        <div class="footer-about">
+          <!-- footer about area -->
+          <h2 class="footerTxt">About Us</h2>
+          <p class="justify-text">
+            Our guitar shop is dedicated to providing excellent customer service and helping musicians of all
+                    skill levels find their perfect instrument.
+                    We have a wide variety of guitars in stock, including acoustic, electric, and bass guitars from all
+                    the major brands.
+                    <br>
+                    We also offer financing options and layaway plans to help you make your dream guitar a reality.
+                    We look forward to helping you find the perfect guitar and supporting you on your musical journey.
+          </p>
+        </div>
+        <div class="footer-contact">
+          <!-- footer contact info -->
+          <h2><strong>Contact Info</strong></h2>
+          <p>
+            +94 112839626 <br /><br />
+            La Guitare <br />
+            No 197/8, <br />
+            Galle Road,<br />
+            Colombo.
+          </p>
+        </div>
+      </div>
+      <hr class="footer-hr" />
+      <div class="footer-content"></div>
+      <hr class="footer-hr" />
+      <!-- page credits-link to page editor page and additional content -->
+      <div class="additional">
+        <h3 class="additional-content">
+        </h3>
+        <p class="page-credits">
+          <b>Created by :</b>
+          <a href="../PageEditor/PageEditor_Sehan.html">Sehan Damsri</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

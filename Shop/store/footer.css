@@ -1,0 +1,86 @@
+
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+/*--------------------------------------------------------------footer----------------------------------------------------------------------*/
+
+.footer{
+    position: relative;
+	top: 70%;          
+	bottom: 0vh;
+    float: right;
+	width: 100%;
+	font-family: 'SF Pro Display', sans-serif;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color:#A5A5A5;
+	margin:0;
+	background-color:rgb(0, 0, 0);
+}
+.footer-content{/* footer main div css */
+	display: flex;
+	flex-direction: row;
+}
+.no-bullet{
+	list-style-type:none;
+	padding-left: 0;
+}
+ a {
+	text-decoration: none;
+	color: #fff;
+}
+ a:hover {/* all anchors on hover */
+	text-decoration: none;
+	color: white;
+}
+.text-left{
+	text-align: left ;
+}
+.justify-text{
+	text-align: justify;
+}
+.footer-img{
+	text-align: center;
+	width: 20%;
+}
+.footer-navigation{
+	margin-left: 1px;
+	margin-right: 1px;
+	width: 15%;
+	
+}
+.footer-about{/* about section in footer */
+	width: 75%;
+}
+.footer-contact{/* contact section in footer */
+	text-align: right;
+	margin-left: 1px;
+	margin-right: 1px;
+	width: 40%;
+}
+.footer-hr{
+	color: white;
+	background-color: white;
+	height: 1px;
+	width: 100%;
+}
+.social-row{/* social media row */
+	margin-top: 1px;
+	margin-bottom: 1px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+}
+.footer-icon{/* social media icons */
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.page-credits{/* page credits section */
+	text-align: center;
+	margin-bottom: 0;
+	
+}
+

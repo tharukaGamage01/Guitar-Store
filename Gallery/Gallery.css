@@ -1,0 +1,183 @@
+/* CSS for main navigation */
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+*{
+	padding:0;
+	margin:0;
+	text-decoration:none;
+	list-style:none;
+	box-sizing:border-box;
+	
+}
+
+.selected{
+	background-color: #ffffff;
+	color: black;
+}
+
+
+nav{
+	display: flex;
+	background-color: rgba(0,0,0,0.5);
+	height:95px auto;
+	width:100%;
+	overflow: hidden;
+	
+	
+}
+.logo{
+	line-height:80px;
+	padding:0 auto;
+	width:95px;
+ 	padding: 10px;
+	margin-left: 20px;
+	padding-bottom: 5px;
+}
+
+nav ul{
+	position: relative;
+    margin-top: 7px;
+	margin-right:10px;
+	margin-left: auto;
+	float: right;
+}
+
+nav ul li{
+	display:inline-block;
+	line-height:100px;
+	margin:0 5px;
+}
+
+nav ul li a{
+    font-family: 'SF Pro Display', sans-serif;
+	color:white;
+	font-size: 16px;
+	padding:10px 20px;
+	border-radius:40px;
+	font-weight:520;
+	text-transform:uppercase;
+	transition: 1s;
+}
+
+nav ul li a:hover{
+	background:#ffffff;
+	color: black;
+}
+
+/* css for gallery */
+
+.gallery{
+	padding:20px;
+}
+.gallery-item{ /* css for gallery item*/
+	font-family: 'SF Pro Display', sans-serif;
+	background-color:#ffffff;
+	float: left;
+	margin: 15px;
+	border-radius: 20px;
+	width: 17%;
+	box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.75);
+	text-align: center;
+	transition: .5s ease;
+}
+
+
+/* gallery image*/
+.gallery-image1{ 
+	border-radius: 20px 20px 0px 0px;
+	height: 320px;
+	transform: rotate(20deg);
+}
+.gallery-image2{
+	border-radius: 20px 20px 0px 0px;
+	height: 300px;
+	transform: rotate(60deg);
+}
+.gallery-image3{
+	border-radius: 20px 20px 0px 0px;
+	height: 320px;
+	transform: rotate(30deg);
+}
+.gallery-image4{
+	border-radius: 20px 20px 0px 0px;
+	height: 300px;
+	transform: rotate(30deg);
+}
+.gallery-image5{
+	border-radius: 20px 20px 0px 0px;
+	height: 300px;
+	transform: rotate(60deg);
+}
+
+.gallery-item:hover{ /* gallery item zoom on hover*/
+	cursor: pointer;
+	transform: scale(1.1);
+	box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.75);
+}
+
+
+.form{ /* form css*/
+	margin-top:10px;
+	font-family: 'SF Pro Display', sans-serif;
+	clear: both;
+    color: cyan;
+	background-color: #000000;
+	border-radius: 30px;
+	padding: 20px;
+	font-size: 17px;
+    position:static;
+    
+}
+option{ /* form css*/
+	background-color: white;
+	font-size: 17px;
+	padding:10px;
+	font-family: 'SF Pro Display', sans-serif;
+}
+
+.align{/* form css*/
+	margin-right: 4%;
+	text-align: left;
+}
+
+
+input[type=reset], #destinations, #fontColor{/* form css*/
+	padding: 10px;
+	border: none;
+	background-color: white;
+	border-radius: 10px;
+}
+
+
+#bigImage-div{/* big image styles*/
+	float: left;
+	width: 45%;
+}
+#bigImage-description-div{/* big image description */
+	font-family: 'SF Pro Display', sans-serif;
+	padding-top: 10px;
+	float: left;
+	width: 44%;
+	text-align: justify;
+}
+#bigImage-description-div a{/* anchors inside big image description */
+	border-radius:5px;
+	padding: 10px;
+	background-color:black;
+}
+
+
+#gallery-display{/* hide the big image area- to display using js */
+	display: none;
+}
+
+#big-image{/* big image  */
+	padding: 20px;
+	display: block;
+	text-align: left;
+	
+	
+}
+
+
+
+

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="store_assets/logo.png">
+    <title>
+        La Guitare | Shop
+    </title>
+
+    <!-- fowntawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- linking ReturnUp btn -->
+    <link rel="stylesheet" href="../../HomePage/ReturnUpBtn.css">
+
+
+    <link rel="stylesheet" type="text/css" href="store.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="store.js" async></script>
+    <script>
+        // Passing Values To Invoice Page
+        function passvalues() {
+            var finalTotal = document.getElementsByClassName("cart-total-price")[0].innerText;
+            console.log(finalTotal);
+            localStorage.setItem("textval", finalTotal);
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+   
+    <a id="button">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    <!-- All Title bar contents -->
+    <nav id="top">
+        <a href="../../HomePage/home.html">
+            <img class="logo" src="../../HomePage/home_assets/Logo.png">
+        </a>
+        <ul>
+            <li><a href="../../HomePage/home.html">HOME</a></li>
+            <li><a href="store.html" class="selected">SHOP</a></li>
+            <li><a href="../../QueryForm/Form.html">COMMENTS</a></li>
+            <li><a href="../../Quiz/index.html">QUIZ</a></li>
+            <li><a href="../../Gallery/Gallery.html">GALLERY</a></li>
+            <li><a href="../../Sitemap/Sitemap.html">SITE MAP</a></li>
+            <li><a href="../../AboutUs/Aboutus.html">ABOUT US</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="container content-section">
+        <h2 class="section-header">Classical Guitars</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Yamaha C40II
+                </span>
+                <img class="shop-item-image" src="store_assets/Guitarimages/Classical/Classical1rbg.png">
+                <div class="product-desc">
+                    <p class="product-detail">Affordable ‘proper’ Nylon-string from Yamaha.</p>
+                    <label>Available : <span class="quantity">25</span></label><br>
+                    <span class="shop-item-price">$899.99</span><br/>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Cordoba C7-CE
+                </span>
+                <img class="shop-item-image" src="store_assets/Guitarimages/Classical/Classical2rbg.png">
+                <div class="product-desc">
+                    <p class="product-detail">Gorgeous Spanish-specific nylon with onboard electronics.</p>
+                    <label>Available : <span class="quantity">30</span></label><br>
+                    <span class="shop-item-price">$950</span><br/>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Ovation Timeless Legend
+    
+                </span>
+                <img class="shop-item-image" src="store_assets/Guitarimages/Classical/Classical3rbg.png">
+                <div class="product-desc">
+                    <p class="product-detail">This bowl-back nylon acoustic is perfect for the stage.</p>
+                    <label>Available : <span class="quantity">10</span></label><br>
+                    <span class="shop-item-price">$999</span><br/>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+
+    <section class="container content-section">
+        <h2 class="section-header">Acoustic Guitars</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Epiphone Inspired By Gibson J-45
+    
+                </span>
+                <img class="shop-item-image" src="store_assets/Guitarimages/Acoustic/Acoustic1rbg.png">
+                <div class="product-desc">
+                    <p class="product-detail">The workhorse just got more affordable.</p>
+                    <label>Available : <span class="quantity">15</span></label><br>
+                    <span class="shop-item-price">$899.99</span><br/>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Taylor 110e
+    
+                </span>
+                <img class="shop-item-image" src="store_assets/Guitarimages/Acoustic/Acoustic2rbg.png">
+                <div class="product-desc">
+                    <p class="product-detail">The best acoustic guitar for intermediate players.</p>
+                    <label>Available : <span class="quantity">8</span></label><br>
+                    <span class="shop-item-price">$735.99</span><br/>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Yamaha FG800
+    
+                </span>
+                <img class="shop-item-image" src="store_assets/Guitarimages/Acoustic/Acoustic3rbg.png">
+                <div class="product-desc">
+                    <p class="product-detail">Could this be your ideal ‘second guitar’?</p>
+                    <label>Available : <span class="quantity">25</span></label><br>
+                    <span class="shop-item-price">$675.99</span><br/>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+
+    <section class="container content-section">
+        <h2 class="section-header">Bass Guitars</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Squier Classic Vibe '60s Jazz Bass
+                  
+                </span>
+                <img class="shop-item-image" src="store_assets/Guitarimages/Bass/bass1rbg.png">
+                <div class="product-desc">
+                    <p class="product-detail">The best bass guitar for players on a budget.</p>
+                    <label>Available : <span class="quantity">12</span></label><br>
+                    <span class="shop-item-price">$700.99</span><br/>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Yamaha BB435 Bass Guitar
+                  
+                </span>
+                <img class="shop-item-image" src="store_assets/Guitarimages/Bass/bass2rbg.png">
+                <div class="product-desc">
+                    <p class="product-detail">The workhorse passive 5-string that’s impossible to beat.</p>
+                    <label>Available : <span class="quantity">20</span></label><br>
+                    <span class="shop-item-price">$565.99</span><br/>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Epiphone Thunderbird Vintage Pro
+                  
+                </span>
+                <img class="shop-item-image" src="store_assets/Guitarimages/Bass/bass3.jpg">
+                <div class="product-desc">
+                    <p class="product-detail">The ‘Bird with the long neck.</p>
+                    <label>Available : <span class="quantity">5</span></label><br>
+                    <span class="shop-item-price">$1200.99</span><br/>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+
+    <section class="container content-section">
+        <h2 class="section-header">Electric Guitars</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Squier Classic Vibe '60s Stratocaster
+                   
+                </span>
+                <img class="shop-item-image" src="store_assets/Guitarimages/Electric/Electric1rbg.png">
+                <div class="product-desc">
+                    <p class="product-detail">The best electric for beginners.</p>
+                    <label>Available : <span class="quantity">12</span></label><br>
+                    <span class="shop-item-price">$1099.99</span><br/>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Epiphone Les Paul Standard
+                   
+                </span>
+                <img class="shop-item-image" src="store_assets/Guitarimages/Electric/Electric2.jpg">
+                <div class="product-desc">
+                    <p class="product-detail">Unbelievable value from Epiphone.</p>
+                    <label>Available : <span class="quantity">30</span></label><br>
+                    <span class="shop-item-price">$990</span><br/>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Reverend Billy Corgan Signature Z-One
+                    
+                </span>
+                <img class="shop-item-image" src="store_assets/Guitarimages/Electric/Electric3rbg.png">
+                <div class="product-desc">
+                    <p class="product-detail">A seriously versatile guitar from the Smashing Pumpkins frontman.</p>
+                    <label>Available : <span class="quantity">20</span></label><br>
+                    <span class="shop-item-price">$1100</span><br/>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+
+
+
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div id="mydiv1" class="cart-items">
+
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button data-model-target="#model" class="btn btn-primary btn-purchase" type="submit">PURCHASE</button>
+    </section>
+
+
+    <!--Beginning Of User Details Form-->
+    <div class="model" id="model">
+        <div class="model-header">
+            <div class="title">User Details Form</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="model-body">
+            <form id="create-account-form" action="invoice.html" method="GET">
+                <!-- USERNAME -->
+                <div class="input-group">
+                    <label for="username">Name</label>
+                    <input type="text" id="username" placeholder="Name" name="Name">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Error Message</p>
+                </div>
+                <!-- EMAIL -->
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Email" name="Email">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Error Message</p>
+                </div>
+                <!-- USER ADDRESS -->
+                <div class="input-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="Address" name="Address">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Error Message</p>
+                </div>
+                <!-- MOBILE NUMBER  -->
+                <div class="input-group">
+                    <label for="mobileNumber">Mobile Number</label>
+                    <input type="tel" id="mobileNumber" placeholder="Mobile Number" name="Phone">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Error Message</p>
+                </div>
+                <form action="output-Javascript-Localstorage.html" method="POST">
+                    <input id="btnPopup" type="submit" value="Checkout" onclick="passvalues(),invoiceData()" />
+                    <script>
+                        function invoiceData() {
+                            var productsVar = document.getElementById('mydiv1').innerHTML;
+                            localStorage.setItem("ITEMS", productsVar);
+                            return;
+                        }
+                    </script>
+                </form>
+                <script src="userInputValidation.js"></script>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <!--End Of User Detail Form-->
+
+    <script src="userDetailForm.js" async></script>
+
+
+
+    <!-------------------------------------website footer --------------------------------------------->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-img">
+                <!-- website logo in footer -->
+                <a href="../../HomePage/home.html">
+                    <img src="../../HomePage/home_assets/Logo.png" alt="footer logo" width="58%" role="img"
+                        aria-label="link to home page" /></a>
+            </div>
+            <div class="footer-about">
+                <!-- footer about area -->
+                <h2>About Us</h2>
+                <p class="justify-text">
+                    Our guitar shop is dedicated to providing excellent customer service and helping musicians of all
+                    skill levels find their perfect instrument.
+                    We have a wide variety of guitars in stock, including acoustic, electric, and bass guitars from all
+                    the major brands.
+                    <br>
+                    We also offer financing options and layaway plans to help you make your dream guitar a reality.
+                    We look forward to helping you find the perfect guitar and supporting you on your musical journey.
+                </p>
+            </div>
+            <div class="footer-contact">
+                <!-- footer contact info -->
+                <h2><strong>Contact Info</strong></h2>
+                <p>
+                    +94 112839626 <br /><br />
+                    La Guitare <br />
+                    No 197/8, <br />
+                    Galle Road,<br />
+                    Colombo.
+                </p>
+            </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="footer-content">
+        </div>
+        <hr class="footer-hr">
+        <!-- page credits-link to page editor page and additional content -->
+        <div class="additional">
+            <p class="page-credits"><b>Created by :</b> <a href="../../PageEditor/PageEditor_Tharuka.html">Tharuka
+                    Gamage</a></p>
+        </div>
+
+        
+        <!-- ---------------------- ReturnUp Btn ------------------------------ -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+
+        <script type="text/javascript">
+
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 200) {
+            btn.addClass('show');
+            } else {
+            btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '200');
+        });
+
+        </script>
+
+</body>
+
+
+
+</html>

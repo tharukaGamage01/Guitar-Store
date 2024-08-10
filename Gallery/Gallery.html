@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <!--css links-->
+  <link rel="stylesheet" type="text/css" href="./PageLayout.css" />
+  <link rel="stylesheet" type="text/css" href="./Gallery.css" />
+  <link rel="stylesheet" type="text/css" href="../HomePage/footer.css" />
+  <!-- js links -->
+  <script src="../Gallery/Gallery.js"></script>
+  <!-- title -->
+  <title>
+    La Guitare | Gallery
+  </title>
+
+  <!-- fowntawesome icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- linking ReturnUp btn -->
+  <link rel="stylesheet" href="../HomePage/ReturnUpBtn.css">
+
+  <!-- title image -->
+  <link rel="icon" href="icon.png" type="image/icon">
+</head>
+
+<body>
+
+  <a id="button">
+    <i class="fa-solid fa-angle-up"></i>
+  </a>
+
+  <!-- All navigation bar contents -->
+  <nav>
+    <a href="../HomePage/home.html">
+      <img class="logo" src="../HomePage/home_assets/Logo.png" alt="La Guitare Logo">
+    </a>
+    <!--menu items-->
+    <ul>
+      <li><a href="../HomePage/home.html">HOME</a></li>
+      <li><a href="../Shop/store/store.html">SHOP</a></li>
+      <li><a href="../QueryForm/Form.html">COMMENTS</a></li>
+      <li><a href="../Quiz/index.html">QUIZ</a></li>
+      <li><a href="./Gallery.html" class="selected">GALLERY</a></li>
+      <li><a href="../Sitemap/Sitemap.html">SITE MAP</a></li>
+      <li><a href="../AboutUs/Aboutus.html">ABOUT US</a></li>
+    </ul>
+  </nav>
+  <!-- End of all navigation bar contents -->
+  <div class="form">
+    <!--form to select destination, change page colour, change font colour-->
+    <form>
+      
+      <label>Background Colour:</label><!-- radio buttons to select background colours -->
+      <input  type="radio" name="colour" value="color1" id="bgColour" onClick="bgcolor(this)"/>
+      <label for="color1" aria-label="radio button to change colour">Pink</label>
+      <input  type="radio" name="colour" value="color2" id="bgColour" onClick="bgcolor(this)"/>
+      <label for="color2" aria-label="radio button to change colour">Blue</label>
+      <input  type="radio" name="colour" value="color3" id="bgColour" onClick="bgcolor(this)"/>
+      <label for="color3" aria-label="radio button to change colour">Green</label>
+      <input  type="radio" name="colour" value="color4" id="bgColour" onClick="bgcolor(this)"/>
+      <label for="color4" aria-label="radio button to change colour">Maroon</label>
+      <input  type="radio" name="colour" value="color5" id="bgColour" onClick="bgcolor(this)"/>
+      <label for="color5" aria-label="radio button to change colour">Red</label>
+      <input  type="radio" name="colour" value="color6" id="bgColour" onClick="bgcolor(this)"/>
+      <label class="align" for="color6" aria-label="radio button to change colour">Random</label>
+
+      <label >Font Colour: </label><!-- dropdown list to select font colour -->
+      <select class="align" id="fontColor" onchange="fontcolor(this.form)" 
+        aria-label="dropdown menu to select font colour">
+        <option value="pleaseSelect" disabled selected hidden>Font Colour</option>
+        <option value="color1">White</option>
+        <option value="color2">Gold</option>
+        <option value="color3">Gray</option>
+        <option value="color4">Brown</option>
+        <option value="color5">Ocean Blue</option>
+      </select>
+
+      <label for="font-size">Font Size:</label>
+      <select id="font-size" onchange="changeTextSize(this.value)">
+        <option value="12">12</option>
+        <option value="16">16</option>
+        <option value="20">20</option>
+        <option value="24">24</option>
+      </select>
+
+      <input type="reset" value="Reset" onclick="reset1()"><!-- reset colour changes and hide big image -->
+    </form>
+  </div>
+
+    <div class="container" role="main">
+        <!-- main container -->
+        <br><br>
+        <div class="gallery">
+          <!-- gallery items -->
+          <div class="gallery-item" onclick="getImage(1)">
+            <!-- gallery item1 -->
+            <div >
+              <img class="gallery-image1" src="./Gallery_imgs/1.png" alt="Guitar 1"  width="100%"  />
+            </div>
+            <div class="gallery-image-description">
+              <h3>Yamaha C40II
+              </h3>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="getImage(2)">
+            <!-- gallery item2 -->
+            <div>
+              <img class="gallery-image2" src="./Gallery_imgs/6.png" alt="Guitar 2"  width="100%" />
+            </div>
+            <div class="gallery-image-description">
+              <h3>Reverend Billy Corgan Signature Z-One
+              </h3>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="getImage(3)">
+            <!-- gallery item3 -->
+            <div>
+              <img class="gallery-image3" src="./Gallery_imgs/3.png" alt="Guitar 3"  width="100%" />
+            </div>
+            <div class="gallery-image-description">
+              <h3>Yamaha FG800
+              </h3>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="getImage(4)">
+            <!-- gallery item4 -->
+            <div>
+              <img class="gallery-image4" src= "./Gallery_imgs/4.png" alt="Guitar 4"  width="100%" role="img"/>
+            </div>
+            <div class="gallery-image-description">
+              <h3>Squier Classic Vibe '60s Jazz Bass
+              </h3>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="getImage(5)">
+            <!-- gallery item5 -->
+            <div>
+              <img class="gallery-image5" src="./Gallery_imgs/5.png" alt="Guitar 5"  width="100%" />
+            </div>
+            <div class="gallery-image-description" role="article">
+              <h3>Epiphone Thunderbird Vintage Pro
+              </h3>
+            </div>
+          </div>
+        </div>
+        
+      <br>
+      <div id="gallery-display">
+        <!-- big image and description display area -->
+        <div id="bigImage-div">
+          <img id="big-image"  alt="big-image" src=""   width="85%" 
+            role="img" aria-label="bigger image of the selected image" /><!-- big image will display here -->
+        </div>
+        <div id="bigImage-description-div">
+          <p id="bigImage-description"></p>
+          <!-- image description will be here -->
+        </div>
+      </div>
+    </div>
+    <br>
+	
+    <!-- ------------------------------------------------website footer----------------------------------------------- -->
+    <div class="footer">
+      <div class="footer-content">
+          <div class="footer-img">
+              <!-- website logo in footer -->
+              <a href="../../HomePage/home.html">
+                  <img src="../HomePage/home_assets/Logo.png" alt="footer logo" width="58%" role="img"
+                      aria-label="link to home page" /></a>
+          </div>
+          <div class="footer-about">
+              <!-- footer about area -->
+              <h2>About Us</h2>
+              <p class="justify-text">
+                  Our guitar shop is dedicated to providing excellent customer service and helping musicians of all
+                  skill levels find their perfect instrument.
+                  We have a wide variety of guitars in stock, including acoustic, electric, and bass guitars from all
+                  the major brands.
+                  <br>
+                  We also offer financing options and layaway plans to help you make your dream guitar a reality.
+                  We look forward to helping you find the perfect guitar and supporting you on your musical journey.
+              </p>
+          </div>
+          <div class="footer-contact">
+              <!-- footer contact info -->
+              <h2><strong>Contact Info</strong></h2>
+              <p>
+                  +94 112839626 <br /><br />
+                  La Guitare <br />
+                  No 197/8, <br />
+                  Galle Road,<br />
+                  Colombo.
+              </p>
+          </div>
+      </div>
+      <hr class="footer-hr">
+      <div class="footer-content">
+      </div>
+      <hr class="footer-hr">
+      <!-- page credits-link to page editor page and additional content -->
+      <div class="additional">
+          <p class="page-credits"><b>Created by :</b> <a href="../PageEditor/Pageeditor_wishma.html">Wishma
+                  Sandeepa</a></p>
+      </div>
+</body>
+
+
+<!-- ---------------------- ReturnUp Btn ------------------------------ -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+
+<script type="text/javascript">
+
+  var btn = $('#button');
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 200) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '200');
+  });
+
+</script>
+
+
+</html>
